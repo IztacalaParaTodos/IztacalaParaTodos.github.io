@@ -13,7 +13,7 @@
 }
 html {
   /* Apple: Futura, MS: Calibri, Otros: Georgia */
-  font-family: Futura, Calibri, Georgia
+  font-family: Futura, Calibri, Georgia;
   font-size: 16px; /* Tamaño root */
 }
 html, body {
@@ -76,8 +76,31 @@ header a {
   font-weight: 400;
   color: inherit;
 }
+/*******************************************************************************
+*                             Fin de header                                    *
+*******************************************************************************/
+/*******************************************************************************
+*                          Cuerpo de la página                                 *
+*******************************************************************************/
+.cuerpo {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.25rem;
+}
+.cuerpo .cuerpo-izquierdo, .cuerpo .cuerpo-derecho {
+  width: 50%;
+  margin: 1%;
+  text-align: center;
+}
+.cuerpo img {
+  max-width: 100%;
+  display: block;
+}
+/*******************************************************************************
+*                       Ajustes para pantallas chicas                          *
+*******************************************************************************/
 @media only screen and (max-width: 470px) {
-  /* Ajustes para pantallas pequeñas */
+  /* Header */
   header #FES-logo {
     display: none;
   }
@@ -88,5 +111,22 @@ header a {
     display: list-item;
     list-style: none;
     border: 1px dotted white;
+  }
+  /* Cuerpo */
+  .cuerpo {
+    width: 100%;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .cuerpo .cuerpo-izquierdo, .cuerpo .cuerpo-derecho {
+    width: 100%;
+    margin: 2% 0 0.5% 0;
+    text-align: center;
+  }
+  .cuerpo img {
+    max-width: 98%;
+    margin: 0 1% 0 1%;
+    display: block;
   }
 }
