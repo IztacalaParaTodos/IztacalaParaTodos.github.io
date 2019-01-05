@@ -21,7 +21,7 @@ html, body {
   margin: 0;
 }
 body {
-  background-color: #f2f2f2; /* Color Gris */
+  background-color: #ffffff; /* Color Gris */
 }
 /*******************************************************************************
 *                             Zona de header                                   *
@@ -93,8 +93,13 @@ header a {
   text-align: center;
 }
 .cuerpo img {
-  max-width: 100%;
-  display: block;
+  max-width: 95%;
+  display: inline-block;
+  border: 2px solid #08245a;  /* Borde color dorado */
+}
+.cuerpo p {
+  text-align: justify;
+  padding: 2%;
 }
 /*******************************************************************************
 *                       Ajustes para pantallas chicas                          *
@@ -110,7 +115,8 @@ header a {
   header #nav-menu li {
     display: list-item;
     list-style: none;
-    border: 1px dotted white;
+    border: solid white;
+    border-width: 1px 1px 0.5px 1px;
   }
   /* Cuerpo */
   .cuerpo {
@@ -125,8 +131,8 @@ header a {
     text-align: center;
   }
   .cuerpo img {
-    max-width: 98%;
+    max-width: 95%;
     margin: 0 1% 0 1%;
-    display: block;
+    display: inline-block;
   }
 }
