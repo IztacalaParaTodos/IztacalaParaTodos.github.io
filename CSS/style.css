@@ -14,10 +14,11 @@
 html {
   /* Apple: Futura, MS: Calibri, Otros: Georgia */
   font-family: Futura, Calibri, Georgia
+  font-size: 16px; /* Tamaño root */
 }
 html, body {
   width: 100%;
-  margin: 0 auto
+  margin: 0;
 }
 body {
   background-color: #f2f2f2; /* Color Gris */
@@ -26,36 +27,66 @@ body {
 *                             Zona de header                                   *
 *******************************************************************************/
 header {
-  background-color: #08245a; /* Color azul para el banner */
-}
-header, header ul, header h1 {
-  margin: 0 auto;
+  width: 100%;
   padding: 0;
-  text-align: center;
-  color: White;
+  color: #ffffff; /* Color Blanco */
+  background-color: #08245a;  /* Color Azul */
+}
+header .banner, header #nav-menu {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+header .banner {
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+header #FES-logo {
+  display: block;
+  float: left;
+  background-color: #ffffff;  /* Color blanco */
+  width: 15%;
+  height: auto;
+  margin: 0.5% 1% 0 0;
+  padding: 0.2%;
 }
 header h1 {
-  font-size: 250%;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 2%;
+  margin-left: 1%;
 }
-header ul {
-  background-color: #ab8627; /* Color dorado */
+header #nav-menu {
+  width: 100%;
+  text-align: center;
+  background-color: #ab8627; /* Color Dorado */
 }
-header li {
+header #nav-menu li {
+  padding: 1.5% 1% 1.5% 1%;
+  text-align: center;
   display: inline-block;
-  margin: 0;
-  padding: 2%;
+}
+header #nav-menu li:hover {
+  color: #ab8627; /* Color Dorado */
+  background-color: #ffffff; /* Color Blanco */
 }
 header a {
-  color: inherit;
   text-decoration: none;
-  font-size: 150%;
+  font-size: 1.25rem;
   font-weight: 400;
-  height: 100%;
+  color: inherit;
 }
-header li:hover {
-  color: #ab8627; /* Color Dorado */
-  background-color: white;
+@media only screen and (max-width: 470px) {
+  /* Ajustes para pantallas pequeñas */
+  header #FES-logo {
+    display: none;
+  }
+  header h1 {
+    font-size: 1.75rem;
+  }
+  header #nav-menu li {
+    display: list-item;
+    list-style: none;
+    border: 1px dotted white;
+  }
 }
