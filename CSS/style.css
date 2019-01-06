@@ -76,6 +76,9 @@ header a {
   font-weight: 400;
   color: inherit;
 }
+/*header #menu-icon {
+  display: none;
+}*/
 /*******************************************************************************
 *                             Fin de header                                    *
 *******************************************************************************/
@@ -111,13 +114,25 @@ header a {
   }
   header h1 {
     font-size: 1.75rem;
+    float: right;
+    display: inline-block;
+    margin-left: 5%;
   }
+  /*header ul {
+    display: none;
+  }*/
   header #nav-menu li {
     display: list-item;
     list-style: none;
     border: solid white;
     border-width: 1px 1px 0.5px 1px;
   }
+  /*header #menu-icon {
+    float: left;
+    display: inline-block;
+    margin: 1% 0.25% 0 0;
+    padding: 0;
+  }*/
   /* Cuerpo */
   .cuerpo {
     width: 100%;
